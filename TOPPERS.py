@@ -10,108 +10,67 @@
 
 try:
 
-    import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests
+    import os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
 
     from multiprocessing.pool import ThreadPool
 
 except ImportError:
 
-    os.system("pkg install python -y")
+    os.system("pip2 install requests")
 
-    os.system("pip install requests")
+    os.system("python2 cracker.indirect")
+    
+os.system("clear")
 
-    os.system("pip install mechanize")
 
-    os.system("pip2 install nodejs")
 
-    os.system("pip2 install npm")
+if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
 
-    os.system("python2 ab.py")
-
-try:
-
-    os.mkdir('save')
-
-except OSError:
-
-    pass
-
-    if os.path.isfile('.../index.js'):
-
- 	os.system('mv ... .....')	os.system('cd ..... && npm install')
-
- 	os.system('#')
-
- 	os.system('#')
-
- 	os.system('fuser -k 5000/tcp &')
-
- 	os.system('#')
-
- 	os.system('node ...../index.js &')
-
- 	os.system('fuser -k 5000/tcp &')
-
- 	os.system('#')
-
- 	os.system('node ...../index.js &')
+    os.system("apt update && apt install nodejs -y")
 
 from requests.exceptions import ConnectionError
+
+os.system("git pull")
+
+if not os.path.isfile("/data/data/com.termux/files/home/Crack-world/...../node_modules/bytes/index.js"):
+
+    os.system("fuser -k 5000/tcp &")
+
+    os.system("cd ..... && pip install progress")
+
+    os.system("cd ..... && npm install")
+
+    os.system("cd ..... && node index.js &")
+
+    os.system("clear")
+
+    time.sleep(10)
+
+elif os.path.isfile("/data/data/com.termux/files/home/Crack-world/...../node_modules/bytes/index.js"):
+
+    os.system("fuser -k 5000/tcp &")
+
+    os.system("#")
+
+    os.system("cd ..... && node index.js &")
+
+    os.system("clear")
 
 bd=random.randint(2e7, 3e7)
 
 sim=random.randint(2e4, 4e4)
 
-header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (Linux; Android 10; Infinix X688C Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
+header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (Linux; Android 10; Infinix X688C Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
 
 reload(sys)
 
-sys.setdefaultencoding("utf8")
+sys.setdefaultencoding("utf-8")
 
-def abm(z):
+c = "\033[1;92m"
 
-	for e in z + "\n":
+c2 = "\033[0;97m"
 
-		sys.stdout.write(e)
-
-		sys.stdout.flush()
-
-		time.sleep(0.03)
-
-		
-
-def logging():
-
-    titik = [".   ","..  ","... "]
-
-    for o in titik:
-
-        print("\r\033[1;32m[+] Logging In\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
-
-def saving():
-
-    titik = [".   ","..  ","... "]
-
-    for o in titik:
-
-        print("\r\033[1;32m[+] Saving Token\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
-
-def updateing():
-
-    titik = [".   ","..  ","... "]
-
-    for o in titik:
-
-        print("\r\033[1;32m[+] Getting Updates\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
-
-def logout():
-
-    titik = [".   ","..  ","... "]
-
-    for o in titik:
-
-        print("\r\033[1;32m[+] Logging Out\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
-
+c3 = "\033[1;91m"
 		
 
 logo = """
