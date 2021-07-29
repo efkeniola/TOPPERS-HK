@@ -102,6 +102,7 @@ logo = """
 \033[1;97m--------------------------------------------------
 """
 
+
 idh = []
 	
 def tech_abm():
@@ -111,7 +112,7 @@ def tech_abm():
     print('')
     print("\033[1;97m--------------------------------------------------")
     username = raw_input("\033[1;97m[+]\033[1;97m Username :\033[1;97m ")
-    if username =="MEMO":
+    if username =="Rock":
         os.system("clear")
         print logo
         print ("[+] Username : MEMO (Correct)")
@@ -122,8 +123,8 @@ def tech_abm():
             logging()
             os.system("clear")
             print logo 
-            print ("\033[1;97m[+]\033[1;92m Username : MEMO\033[1;92m (Correct)")
-            print ("\033[1;97m[+]\033[1;92m Password : KING\033[1;92m (Correct)")
+            print ("\033[1;97m[+]\033[1;92m Username : Tiger\033[1;92m (Correct)")
+            print ("\033[1;97m[+]\033[1;92m Password : Devil\033[1;92m (Correct)")
 	    print("\033[1;97m--------------------------------------------------")
             time.sleep(1)
             print('')
@@ -136,12 +137,12 @@ def tech_abm():
             login_choice()
         else:
             print ("\t [!] Password : "+passwordss+" (Wrong)")
-	    os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+	    os.system('xdg-open https://m.facebook.com/Xami.Devil')
             time.sleep(1)
             tech_abm()
     else:
         print ("\t [!] Username : "+username+" (Wrong)")
-	os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+	os.system('xdg-open https://www.facebook.com/rafiahamed.joy.545')
         time.sleep(1)
         tech_abm()
 
