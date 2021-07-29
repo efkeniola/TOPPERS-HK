@@ -100,32 +100,51 @@ logo = """
 \033[1;93m➤\033[1;97m Whatsapp : +2347013107449
 
 \033[1;97m--------------------------------------------------
- """
-CorrectUsername = "MEMO"
-CorrectPassword = "KING"
+"""
 
-loop = 'true'
-while (loop == 'true'):
-    username = raw_input("\033[1;91m[+] \033[1;91m \x1b[1;91mTool Username \x1b[1;91m: \x1b[1;97m")
-    if (username == CorrectUsername):
-    	password = raw_input("\033[1;91m[+] \033[1;91m \x1b[1;91mTool Password \x1b[1;91m: \x1b[1;97m")
-        if (password == CorrectPassword):
-            print "Logged in successfully as " + username #Dev:Binyamin
-	    time.sleep(2)
-            loop = 'false'
+idh = []
+	
+def tech_abm():
+    os.system("clear")
+    print logo
+    print("\033[1;93mFirst Tool login").center(50)
+    print('')
+    print("\033[1;97m--------------------------------------------------")
+    username = raw_input("\033[1;97m[+]\033[1;97m Username :\033[1;97m ")
+    if username =="MEMO":
+        os.system("clear")
+        print logo
+        print ("[+] Username : MEMO (Correct)")
+        passwordss = raw_input("\033[1;97m[+]\033[1;97m Password :\033[1;97m ")
+        if passwordss =="KING":
+            os.system("clear")
+            print logo
+            logging()
+            os.system("clear")
+            print logo 
+            print ("\033[1;97m[+]\033[1;92m Username : MEMO\033[1;92m (Correct)")
+            print ("\033[1;97m[+]\033[1;92m Password : KING\033[1;92m (Correct)")
+	    print("\033[1;97m--------------------------------------------------")
+            time.sleep(1)
+            print('')
+            print("\t \033[1;92m[+] Login Successful\033[0;97m")
+            time.sleep(1)
+        try:
+            open(".login.txt","r")
+            menu()
+        except(KeyError , IOError):
+            login_choice()
         else:
-            print "\033[1;97mWrong Password"
-            os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+            print ("\t [!] Password : "+passwordss+" (Wrong)")
+	    os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+            time.sleep(1)
+            tech_abm()
     else:
-        print "\033[1;97mWrong Username"
-        os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+        print ("\t [!] Username : "+username+" (Wrong)")
+	os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+        time.sleep(1)
+        tech_abm()
 
-##### LICENSE #####
-#=================#
-def lisensi():
-	os.system('clear')
-	login()
-####login#########
 def login_choice():
 
     os.system('clear')
