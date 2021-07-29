@@ -102,7 +102,6 @@ logo = """
 \033[1;97m--------------------------------------------------
 """
 
-
 idh = []
 	
 def tech_abm():
@@ -112,7 +111,7 @@ def tech_abm():
     print('')
     print("\033[1;97m--------------------------------------------------")
     username = raw_input("\033[1;97m[+]\033[1;97m Username :\033[1;97m ")
-    if username =="Rock":
+    if username =="MEMO":
         os.system("clear")
         print logo
         print ("[+] Username : MEMO (Correct)")
