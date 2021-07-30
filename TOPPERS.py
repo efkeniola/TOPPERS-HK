@@ -102,48 +102,7 @@ logo = """
 \033[1;97m--------------------------------------------------
 """
 
-idh = []
-	
-def tech_abm():
-    os.system("clear")
-    print logo
-    print("\033[1;93mFirst Tool login").center(50)
-    print('')
-    print("\033[1;97m--------------------------------------------------")
-    username = raw_input("\033[1;97m[+]\033[1;97m Username :\033[1;97m ")
-    if username =="MEMO":
-        os.system("clear")
-        print logo
-        print ("[+] Username : MEMO (Correct)")
-        passwordss = raw_input("\033[1;97m[+]\033[1;97m Password :\033[1;97m ")
-        if passwordss =="KING":
-            os.system("clear")
-            print logo
-            logging()
-            os.system("clear")
-            print logo 
-            print ("\033[1;97m[+]\033[1;92m Username : Tiger\033[1;92m (Correct)")
-            print ("\033[1;97m[+]\033[1;92m Password : Devil\033[1;92m (Correct)")
-	    print("\033[1;97m--------------------------------------------------")
-            time.sleep(1)
-            print('')
-            print("\t \033[1;92m[+] Login Successful\033[0;97m")
-            time.sleep(1)
-        try:
-            open(".login.txt","r")
-            menu()
-        except(KeyError , IOError):
-            login_choice()
-        else:
-            print ("\t [!] Password : "+passwordss+" (Wrong)")
-	    os.system('xdg-open https://m.facebook.com/Xami.Devil')
-            time.sleep(1)
-            tech_abm()
-    else:
-        print ("\t [!] Username : "+username+" (Wrong)")
-	os.system('xdg-open https://www.facebook.com/rafiahamed.joy.545')
-        time.sleep(1)
-        tech_abm()
+
 
 def login_choice():
 
