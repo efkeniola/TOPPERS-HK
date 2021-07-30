@@ -1,4 +1,4 @@
-#coding=utf-8
+   #coding=utf-8
 
 #!/usr/bin/python2
 
@@ -68,80 +68,30 @@ c2 = "\033[0;97m"
 
 c3 = "\033[1;91m"
 
-logo ="""
-\033[1;97m✮❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂✮\033[1;92mNigerian-Hackers\033[1;97m✮❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂✮"""
-print  "\033[1;90m👽 ●▬▬▬▬●�������������������GUPTA-SHAKEL�����������������●▬▬▬▬● 👽"
-jalan("\033[0;31m👽👽👽👽👽👽👽👽") 
-jalan("\033[0;32m★") 
-jalan("\033[0;33m★★") 
-jalan("\033[0;34m★★★") 
-jalan("\033[0;31m●═════⚀●☆●☆●⚀══════●") 
-jalan("\033[0;33m⚀") 
-jalan("\033[1;35m⚀❍❍❖❍❍⚀") 
-jalan("\033[0;37m☠ Welcome to GUPTA SHAKEL ☠   ") 
-jalan("\033[0;37m⚀❍❍❖❍❍⚀") 
-jalan("\033[0;35m★★★") 
-jalan("\033[0;36m★★") 
-jalan("\033[0;37m★") 
-jalan("\033[0;96m👽👽👽👽👽👽👽") 
-print "\033[1;97m✮❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂✮\033[1;92mNigerian Anonymous Hackers\033[1;97m✮❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂✮"
-
-print "\033[1;97m--------------------------------------------------------------"
-print "\033[1;92m➣  Facebook : Mark Cornel"
-print "\033[1;94m➣  Github   : https://github.com/GUPTA-SHAKEL"
-print "\033[1;96m➣  Note     : Having Problem? Contact Me On WhatsApp:+2347013107449"
-print "\033[1;99m➣  Disclamiar:: This Is For Educational Purpose Only."
-print "\033[1;97m--------------------------------------------------------------"""
-
-def tik():
-	titik = ['.   ','..  ','... ']
-	for o in titik:
-		print("\r\x1b[1;93mPlease Wait \x1b[1;93m"+o),;sys.stdout.flush();time.sleep(1)
+logo = """                                          
 
 
-back = 0
-berhasil = []
-cekpoint = []
-oks = []
-id = []
-listgrup = []
-vulnot = "\033[31mNot Vuln"
-vuln = "\033[32mVuln"
-os.system("clear")
-print """
 
-▄︻┻═┳一𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘍𝘢𝘴𝘵𝘦𝘴𝘵 𝘊𝘭𝘰𝘯𝘪𝘯𝘨 𝘌𝘷𝘦𝘳
-▄︻┻═┳一🍑  🎀  𝐹𝒶𝓂🍬𝓊𝓈 𝓀𝒾𝓃𝑔  🎀  🍑
-▄︻┻═┳一 🅶🆄🅿🆃🅰--🅲🅻🅾🅽🅴
-        🐔  🎀  𝒲𝑒𝓁𝒸💗𝓂𝑒  🎀  🐔 """
+\033[1;96m◁━━━━━━━━━━━━━━━━━━━━◈👽◈━━━━━━━━━━━━━━━━━━━━▷\033[1;97m
 
-CorrectUsername = "MEMO"
-CorrectPassword = "KING"
 
-loop = 'true'
-while (loop == 'true'):
-    username = raw_input("\033[1;97mEnter Username \x1b[1;97m: \x1b[1;97m")
-    if (username == CorrectUsername):
-    	password = raw_input("\033[1;97mEnter Passcode \x1b[1;97m: \x1b[1;97m")
-        if (password == CorrectPassword):
-            print "\033[1;97mAccess Granted "#Dev:Gupta Shakel
-	    time.sleep(1)
-            loop = 'false'
-        else:
-            print "\033[1;97mACCESS DENIED"
-            os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
-    else:
-        print "\033[1;97mACCESS DENIED"
-        os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
-def login():
-	os.system('clear')
-	try:
-		toket = open('login.txt','r')
-		menu() 
-	except (KeyError,IOError):
-		os.system('clear')
-		print logo
-     	
+\033[1;96m(~)\033[1;97m Author : GUPTA-SHAKEL \033[1;97m[ \033[0;92mGUPTA \033[1;97m]
+
+\033[1;96m(~)\033[1;97m Github : https://GitHub.com/GUPTA-SHAKEL
+
+\033[1;96m(~)\033[1;97m Fb     : Mark Cornel
+                           
+            USE AIRPLANE MODE EVERY 20 MINT
+\033[1;97m-----------------------------------------------
+
+"""
+
+
+
+def main():
+
+    os.system("clear")
+	
     print("")
 
     print("\033[0;97m[ Starting Main Menu ]").center(50)
