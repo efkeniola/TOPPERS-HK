@@ -56,10 +56,10 @@ def method_menu():
     os.system("clear")
     logo()
     print("")
-    print("\t    \033[1;36mClone Method Menu\033[0;97m")
+    print("\t    \033[1;34mClone Method Menu\033[0;97m")
     print("")
-    print("\x1b[1;93m[1] B-api (Fast)")
-    print("\x1b[1;93m[[2] Localhost")
+    print("\x1b[1;92m[1] B-api (Fast)")
+    print("\x1b[1;92m[2] Localhost")
     print("")
     method_menu_select()
 def method_menu_select():
