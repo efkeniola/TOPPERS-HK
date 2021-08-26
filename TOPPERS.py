@@ -91,7 +91,7 @@ def login_select():
         print("")
         print("\t    \033[1;32mFB Token Login\033[0;97m")
         print("")
-        token = raw_input("\x1b[1;97m Past token here : ")
+        token = raw_input("\x1b[1;95mPast token here : ")
         token_s = open(".fb_token.txt","w")
         token_s.write(token)
         token_s.close()
